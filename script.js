@@ -33,7 +33,6 @@ function colocarMines() {
     for (let i = 0; contador < mines; i++) {
         let x = Math.trunc(Math.random() * mida);
         let y = Math.trunc(Math.random() * mida);
-        //console.log(x, y);
         if (matriu[x][y]!=='*'){
             matriu[x][y] = '*';
             resposta[x][y] = '*';
@@ -108,6 +107,7 @@ function renderitzar() {
                         div.innerText = '🚩';
                         banderes--
                     }
+                    //Mostrar les benderes que t'he queden
                     missatgeDisplay.textContent = ``;
                     missatgeDisplay.textContent = banderes + '🚩';
 
@@ -131,6 +131,7 @@ function calcularBombesProperes(i,j) {
     return bombes;
 }
 
+//Cuant perds et mostra totes les mines
 function mostrarResposta() {
     const container = document.getElementById('grid-container');
     container.innerHTML = "";

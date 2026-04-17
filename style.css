@@ -35,17 +35,18 @@ body {
     font-weight: bold;
 }
 
-/* Color quan la cel·la està "pintada" */
+/* cell de cuant hi ha la mina */
 .cell.mina {
     background-color: #e63333;
 
 }
+/* cell de cuant hi ha la bandera */
 .cell.bandera {
     align-content: space-around;
     transition: background-color 0.3s;
 
 }
-
+/* Cell de cuant esta pitjat i amb numero */
 .cell.active2 {
     background-color: #ffffff; /
     transition: background-color 0.3s;
