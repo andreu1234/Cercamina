@@ -26,12 +26,36 @@ body {
 .cell {
     width: 30px;
     height: 30px;
-    background-color: white; /* Color per defecte (fons) */
+    background-color: #34c534; /* Color per defecte (fons) */
     transition: background-color 0.3s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 /* Color quan la cel·la està "pintada" */
-.cell.active {
-    background-color: #00ff00; /* Verd fluorescent */
-    box-shadow: inset 0 0 10px #000;
+.cell.mina {
+    background-color: #e63333;
+
+}
+.cell.bandera {
+    align-content: space-around;
+    transition: background-color 0.3s;
+
+}
+
+.cell.active2 {
+    background-color: #ffffff; /
+    transition: background-color 0.3s;
+
+}
+
+div{
+    align-items: center;
+}
+
+.cell:hover {
+    background-color: #978e8e;
 }
